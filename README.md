@@ -6,11 +6,6 @@ A cryptocurrency price tracker web application built using **Node.js**, **Expres
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Database Setup](#database-setup)
-- [Running the Application](#running-the-application)
-- [Directory Structure](#directory-structure)
-- [Contributing](#contributing)
 
 ## Features
 - Fetches live cryptocurrency data using WazirX API.
