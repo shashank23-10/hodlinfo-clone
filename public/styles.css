@@ -1,0 +1,320 @@
+/* Reset some basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima nova' sans-serif;
+    background-color: #191d28;
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+}
+
+.logo {
+    font-size: 2.5em; /* Increased size for better emphasis */
+    font-weight: 700; /* Use a bolder weight */
+    color: #00ffd5;
+}
+
+/* Currency Buttons */
+.currency-buttons button {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+/* Connect Button */
+.connect-section {
+    display: flex;
+    align-items: center;
+}
+
+.connect-btn {
+    background-color: #00ffd5;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.telegram-icon {
+    margin-right: 10px;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    margin-left: 20px;
+    position: relative;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 40px;
+    height: 20px;
+}
+
+.toggle-switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-switch label::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #00ffd5;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.toggle-switch input:checked + label::after {
+    left: 22px;
+}
+
+.price-section .percentages {
+    color: #00ffd5;
+    font-size: 2em; /* Slightly larger to match the image's style */
+    margin-bottom: -0.4em;
+    text-align: center;
+}
+
+/* Buttons */
+.currency-buttons button,
+.buy-btn {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.buy-btn {
+    background-color: #0affaa;
+    color: #000;
+}
+
+/* Toggle Section */
+.toggle-section {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-icon {
+    font-size: 1.5em;
+}
+
+/* Price Section */
+.price-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+}
+
+.best-price {
+    font-size: 3.5em; /* Larger font size for better emphasis */
+    font-weight: 800; /* Bolder font weight */
+    text-align: center;
+}
+
+.data{
+    display: block;
+}
+.best-priced{
+    text-align: center;
+    color: #aaa;
+    font-size: 1em; /* Adjusted size */
+}
+
+.change-percentage {
+    text-align: center;
+}
+
+.average-price {
+    text-align: center;
+    color: #aaa;
+    font-size: 1em; /* Adjusted size */
+}
+
+/* Table Section */
+#ticker-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Use 'separate' to allow row spacing */
+    border-spacing: 0 10px; /* Only vertical spacing between rows */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center; /* Center-align content for a clean look */
+    background-color: #333; /* Set background color for cells */
+    border: none; /* Remove default borders */
+    font-size: 1em; /* Adjusted font size */
+}
+
+th {
+    background-color: #444;
+    font-weight: 700; /* Emphasize header text */
+    color: #00ffd5; /* Matching header color with the image */
+}
+
+td {
+    color: #fff;
+}
+
+/* Adjust first column to have the platform names centered */
+td:first-child {
+    font-weight: 600; /* Bold for platform names */
+}
+
+/* Hover effect for rows */
+tr:hover td {
+    background-color: #2a2a2a;
+}
+
+/* Rounded corners for individual rows */
+tr {
+    background-color: #333; /* Set background color for row gaps */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+/* Savings and Difference - conditional styling */
+td.positive {
+    color: #0affaa; /* Bright green for positive values */
+    font-weight: 600; /* Bolder for emphasis */
+}
+
+td.negative {
+    color: #ff4d4d; /* Bright red for negative values */
+    font-weight: 600; /* Bolder for emphasis */
+}
+
+/* Add subtle shadow for a 3D effect */
+table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button inside table */
+.add-home-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0affaa;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600; /* Bold button text */
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.home-btn{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #0affaa;
+    border: 0.3em #0affaa solid;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400; /* Bold button text */
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.home-btn:hover{
+    background: #0affaa;
+    color: #000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2em;
+    }
+
+    .currency-buttons button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .connect-btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .price-section {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .best-price {
+        font-size: 2.5em; /* Reduce font size for smaller screens */
+    }
+
+    #ticker-table th, #ticker-table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .currency-buttons button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    .connect-btn {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+    .best-price {
+        font-size: 2em; /* Further reduce font size for very small screens */
+    }
+
+    #ticker-table th, #ticker-table td {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+}
+
